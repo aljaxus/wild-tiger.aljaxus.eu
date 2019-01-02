@@ -3,7 +3,13 @@ module.exports = {
     name: 'Wild Tiger',
     msTileColor: '#202020',
     themeColor: '#A55737',
-    workboxPluginMode: 'InjectManifest'
+
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      swDest: 'service-worker.js',
+      swSrc: './src/sw.js',
+      importWorkboxFrom: 'local'
+    }
   },
 
   baseUrl: undefined,
