@@ -76,8 +76,8 @@ body:before {
 a:not(.v-btn):not(.v-list__tile):not(.default) {
 	text-decoration: none;
 	transition: color 0.3s;
-	color: #1976d2;
+	color: rgb(199, 115, 47);
 }
 a:not(.v-btn):not(.v-list__tile):not(.default):hover {
-	color: #0a3561;
+	color: #A55737;
 }
