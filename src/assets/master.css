@@ -1,0 +1,83 @@
+/* DISABLE SELECTING TEXT */
+body{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'Sunflower', -apple-system, BlinkMacSystemFont, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.canSelectText {
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+/* DISABLE DRAGGING IMAGES */
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+/* SCROLLBAR SETTINGS */
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* Page background */
+body:before {
+	content: "";
+	position: fixed;
+	left: -50px;
+	right: -50px;
+	top: -50px;
+	bottom: -50px;
+	z-index: -1;
+
+	display: block;
+	/* background-image: url('./../img/nora-gorlitz-362656-unsplash.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: #e3e3e3;
+
+	width: 140vw;
+	height: 120vh;
+
+	/* -webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px); */
+}
+.application {
+	background: unset !important;
+}
+
+
+/* Custom anchor element style */
+a:not(.v-btn):not(.v-list__tile):not(.default) {
+	text-decoration: none;
+	transition: color 0.3s;
+	color: #1976d2;
+}
+a:not(.v-btn):not(.v-list__tile):not(.default):hover {
+	color: #0a3561;
+}

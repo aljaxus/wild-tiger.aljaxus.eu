@@ -1,38 +1,40 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
+    <Navigation />
 
     <v-content>
-      <HelloWorld/>
+      <transition name="fade" mode="out-in" appear>
+        <router-view></router-view>
+      </transition>
     </v-content>
+
+    <Footer />
+    <SnackbarSwUpdated />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import store from './store'
+
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
+import SnackbarSwUpdated from './components/SnackbarSwUpdated'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SnackbarSwUpdated, Navigation, Footer
   },
   data () {
     return {
-      //
+      store
     }
   }
 }
 </script>
+<style>
+@import './assets/master.css';
+@import './assets/vue.css';
+.fade-enter-active, .fade-leave-active { transition: opacity 0.2s }
+.fade-enter, .fade-leave-active { opacity: 0 }
+</style>
