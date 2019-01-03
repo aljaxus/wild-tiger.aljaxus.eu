@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.e60bc854e11d9cb19b8c0717619c7594.js", "/workbox-v3.6.3/workbox-sw.js");
+importScripts("/precache-manifest.b8e0e4df3851a3d61964c83213993fec.js", "/workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/workbox-v3.6.3"});
 /* eslint-disable no-console */
 console.log('Service worker script was loaded.');
