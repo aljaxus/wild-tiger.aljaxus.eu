@@ -1,0 +1,1 @@
+#### Please build the app using `npm run build` when in the app directory
