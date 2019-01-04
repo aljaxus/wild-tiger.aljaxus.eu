@@ -45,6 +45,17 @@ export default {
 			{
         text: 'Home',
         to: {name:'home'}
+      },
+			{
+        text: 'GitHub',
+        href: 'https://github.com/aljaxus/wild-tiger.aljaxus.eu',
+        target: '_blank',
+        color: 'gray'
+      },
+			{
+        text: 'By Aljaxus',
+        href: 'https://aljax.us',
+        target: '_blank'
       }
 		]
 	})
