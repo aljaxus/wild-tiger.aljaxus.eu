@@ -11,10 +11,12 @@
       <v-flex color="grey darken-2" pa-2 text-xs-left white--text xs12 md8 >
         <v-btn
           v-for="link in links"
-          v-bind:key="link.id"
-          v-bind:color="link.color || 'primary'"
-          v-bind:to="link.to"
-          style="padding:0;margin:2px 3px;height:24px;min-width:70px;"
+          :key="link.id"
+          :color="link.color || 'primary'"
+          :to="!!link.to ? link.to : null"
+          :href="!!link.href ? link.href : null"
+          :target="!!link.href && !!link.target ? link.target : null"
+          style="margin:2px 3px;height:24px;min-width:70px;"
           small
           outline
           exact
@@ -26,7 +28,6 @@
         <a
           color="purple accent-1"
           href="https://wildtigerwa.net"
-          target="_blank"
           small
           outline
         >
