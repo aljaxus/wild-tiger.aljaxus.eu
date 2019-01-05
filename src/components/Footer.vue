@@ -53,7 +53,7 @@ export default {
         color: 'gray'
       },
 			{
-        text: 'By Aljaxus',
+        text: 'Coded By Aljaxus',
         href: 'https://aljax.us',
         target: '_blank'
       }
