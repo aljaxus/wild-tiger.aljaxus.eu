@@ -2,7 +2,7 @@
      <v-container fluid>
         <v-layout justify-center>
             <v-flex xs12 sm12 md12>
-                <v-card class="elevation-12">
+                <v-card class="elevation-6">
                     <v-card-text class="text-xs-center">
                         <h3>Home</h3>
                     </v-card-text>
