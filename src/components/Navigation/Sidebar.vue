@@ -42,7 +42,7 @@
 					<v-icon>mdi-home-city</v-icon>
 				</v-list-tile-action>
 				<v-list-tile-content>
-					<v-list-tile-title>{{ $t("about") }}</v-list-tile-title>
+					<v-list-tile-title>{{ $t("about_us") }}</v-list-tile-title>
 				</v-list-tile-content>
 			</v-list-tile>
 			<v-list-tile
@@ -53,7 +53,7 @@
 					<v-icon>mdi-book-open-page-variant</v-icon>
 				</v-list-tile-action>
 				<v-list-tile-content>
-					<v-list-tile-title>{{ $t("menu") }}</v-list-tile-title>
+					<v-list-tile-title>{{ $t("our_menu") }}</v-list-tile-title>
 				</v-list-tile-content>
 			</v-list-tile>
 

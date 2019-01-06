@@ -1,9 +1,9 @@
 {
-  "about": "About us",
+  "about_us": "About us",
   "close_sidebar": "Close sidebar",
   "error404_btnTxt": "Back to main page",
   "error404_message": "The resource or page you are looking for could not be found.",
   "error404_title": "Error 404 - Not Found",
   "home": "Home",
-  "menu": "Our menu"
+  "our_menu": "Our menu"
 }
