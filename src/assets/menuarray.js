@@ -293,7 +293,7 @@ export default {
         },
         {
           name: 'Drunken Noodle',
-          description: 'desc',
+          description: 'Stir-fried wide-size rice noodle with Thai chili, egg, onion, bell pepper, broccoli, tomato and basil served with raw bean sprout.',
           price: null,
           additions: [],
           imgUrl: 'https://wildtigerwa.net/uploads/7/9/6/8/79685034/drunken-noodle_orig.jpg'
