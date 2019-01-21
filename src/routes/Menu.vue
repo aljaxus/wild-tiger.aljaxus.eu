@@ -17,7 +17,8 @@
         xs6 
         sm4 
         md4 
-        lg3
+        lg2
+        xl2
         class="pa-2"
         v-for="(meal, id) in food.items"
         :key="id"
@@ -25,11 +26,10 @@
         <v-card
           height="100%"
           hover
-          @click="toggleItemSelection()"
         >
           <v-img
             :src="meal.imgUrl != null && meal.imgUrl != '' ? meal.imgUrl : './img/transparent-512px.png'"
-            aspect-ratio="2.75"
+            aspect-ratio="1.75"
           >
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -47,9 +47,20 @@
           <v-card-text>
             <div>{{meal.description}}</div>
           </v-card-text>
-          <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
+          <v-card-actions align-end>
+            <v-btn 
+              flat 
+              color="green"
+              @click="meal.count++"
+            >+</v-btn>
+            <v-spacer></v-spacer>
+            {{meal.count}}
+            <v-spacer></v-spacer>
+            <v-btn 
+              flat
+              color="red"
+              @click="meal.count--"
+            >-</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
